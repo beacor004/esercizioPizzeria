@@ -38,6 +38,10 @@ namespace esercizioDiProva
             this.lstVisualizzazione = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblMargherita = new System.Windows.Forms.Label();
+            this.lblVerdura = new System.Windows.Forms.Label();
+            this.lblStagioni = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -116,16 +120,56 @@ namespace esercizioDiProva
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(429, 352);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 25);
+            this.label5.Size = new System.Drawing.Size(168, 25);
             this.label5.TabIndex = 8;
-            this.label5.Text = "pizze verdura:";
+            this.label5.Text = "Totale pizze verdura";
             this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(429, 400);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(186, 25);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Totale pizze 4 stagioni";
+            // 
+            // lblMargherita
+            // 
+            this.lblMargherita.AutoSize = true;
+            this.lblMargherita.Location = new System.Drawing.Point(644, 298);
+            this.lblMargherita.Name = "lblMargherita";
+            this.lblMargherita.Size = new System.Drawing.Size(22, 25);
+            this.lblMargherita.TabIndex = 10;
+            this.lblMargherita.Text = "0";
+            // 
+            // lblVerdura
+            // 
+            this.lblVerdura.AutoSize = true;
+            this.lblVerdura.Location = new System.Drawing.Point(644, 352);
+            this.lblVerdura.Name = "lblVerdura";
+            this.lblVerdura.Size = new System.Drawing.Size(22, 25);
+            this.lblVerdura.TabIndex = 11;
+            this.lblVerdura.Text = "0";
+            // 
+            // lblStagioni
+            // 
+            this.lblStagioni.AutoSize = true;
+            this.lblStagioni.Location = new System.Drawing.Point(644, 400);
+            this.lblStagioni.Name = "lblStagioni";
+            this.lblStagioni.Size = new System.Drawing.Size(22, 25);
+            this.lblStagioni.TabIndex = 12;
+            this.lblStagioni.Text = "0";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblStagioni);
+            this.Controls.Add(this.lblVerdura);
+            this.Controls.Add(this.lblMargherita);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lstVisualizzazione);
@@ -153,6 +197,10 @@ namespace esercizioDiProva
         private System.Windows.Forms.ListBox lstVisualizzazione;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblMargherita;
+        private System.Windows.Forms.Label lblVerdura;
+        private System.Windows.Forms.Label lblStagioni;
     }
 }
 

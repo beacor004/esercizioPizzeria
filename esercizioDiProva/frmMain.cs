@@ -29,7 +29,27 @@ namespace esercizioDiProva
 
         private void btnAgiungi_Click(object sender, EventArgs e)
         {
+            int nPizze;
+            switch (cmbTipoDiPizza.Text)
+            {
+                case "Margherita":
+                    lstVisualizzazione.Items.Add("Margherita(" + txtQuantita.Text+")");
+                    nPizze = Convert.ToInt32(lblMargherita.Text);
+                    break;
 
+                case "Verdure":
+                    lstVisualizzazione.Items.Add("Verdure(" + txtQuantita.Text + ")");
+                    nPizze = Convert.ToInt32(lblVerdura.Text);
+                    break;
+
+                case "4 stagioni":
+                    lstVisualizzazione.Items.Add("Margherita(" + txtQuantita.Text + ")");
+                    nPizze = Convert.ToInt32(lblStagioni.Text);
+                    break;
+
+
+
+            }
         }
     }
 }
